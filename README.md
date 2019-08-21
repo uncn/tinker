@@ -1,6 +1,6 @@
 # Tinker
 
-[![](https://jitpack.io/v/ShortStickBoy/Tinker.svg)](https://jitpack.io/#ShortStickBoy/Tinker)
+[![](https://jitpack.io/v/com.sunzn/tinker.svg)](https://jitpack.io/#com.sunzn/tinker)
 [![](https://img.shields.io/badge/License-Apache%202.0-orange.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 
 Tinker is an open source Android library, It helps developers to achieve translucent modes effects very easily when using KitKat or LOLLIPOP.
@@ -8,7 +8,7 @@ Tinker is an open source Android library, It helps developers to achieve translu
 ### Gradle
 ```groovy
     dependencies {
-        implementation 'com.github.ShortStickBoy:Tinker:1.1.6'
+        implementation 'com.sunzn:tinker:1.1.8'
     }
 ```
 
