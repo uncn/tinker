@@ -6,6 +6,20 @@
 Tinker is an open source Android library, It helps developers to achieve translucent modes effects very easily when using KitKat or LOLLIPOP.
 
 ### Gradle
+
+#### Step 1. Add the JitPack repository to your build file
+
+```groovy
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+#### Step 2. Add the dependency
+
 ```groovy
     dependencies {
         implementation 'com.sunzn:tinker:1.1.9'
