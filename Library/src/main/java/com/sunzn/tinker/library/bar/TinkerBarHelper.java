@@ -43,18 +43,16 @@ public class TinkerBarHelper {
         if (mStatusBarType != STATUS_BAR_TYPE_DEFAULT) {
             return setStatusBarLightMode(activity, mStatusBarType);
         }
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-            if (isMIUICustomStatusBarLightModeImpl() && MIUISetStatusBarLightMode(activity.getWindow(), true)) {
-                mStatusBarType = STATUS_BAR_TYPE_MIUI;
-                return true;
-            } else if (FlymeSetStatusBarLightMode(activity.getWindow(), true)) {
-                mStatusBarType = STATUS_BAR_TYPE_FLYME;
-                return true;
-            } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                Android6SetStatusBarLightMode(activity.getWindow(), true);
-                mStatusBarType = STATUS_BAR_TYPE_ANDROID6;
-                return true;
-            }
+        if (isMIUICustomStatusBarLightModeImpl() && MIUISetStatusBarLightMode(activity.getWindow(), true)) {
+            mStatusBarType = STATUS_BAR_TYPE_MIUI;
+            return true;
+        } else if (FlymeSetStatusBarLightMode(activity.getWindow(), true)) {
+            mStatusBarType = STATUS_BAR_TYPE_FLYME;
+            return true;
+        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            Android6SetStatusBarLightMode(activity.getWindow(), true);
+            mStatusBarType = STATUS_BAR_TYPE_ANDROID6;
+            return true;
         }
         return false;
     }
