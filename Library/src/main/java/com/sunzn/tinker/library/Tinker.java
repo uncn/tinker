@@ -57,7 +57,7 @@ public class Tinker {
     private void suitBar(Activity context, Window window) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             suitBar21(context, window);
-        } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
+        } else {
             suitBar19(context, window);
         }
     }
