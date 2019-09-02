@@ -8,7 +8,7 @@ Tinker is an open source Android library, It helps developers to achieve translu
 ### Gradle
 ```groovy
     dependencies {
-        implementation 'com.sunzn:tinker:1.1.8'
+        implementation 'com.sunzn:tinker:1.1.9'
     }
 ```
 
