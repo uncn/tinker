@@ -10,12 +10,12 @@ Tinker is an open source Android library, It helps developers to achieve translu
 #### Step 1. Add the JitPack repository to your build file
 
 ```groovy
-	allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
-	}
+    allprojects {
+        repositories {
+            ...
+            maven { url 'https://jitpack.io' }
+        }
+    }
 ```
 
 #### Step 2. Add the dependency
